@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Lista de Juegos Digitales";
+}
+
+<style>
+
+    .card-header:first-child {
+        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    }
+
+    .card-header-custom {
+        background: transparent;
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: #fff;
+        border-bottom: 0 solid rgba(0,0,0,.125);
+    }
+
+    .justify-content-between {
+        justify-content: space-between !important;
+    }
+
+    .d-flex {
+        display: flex !important;
+    }
+</style>
+
+    <div class="columns container">
+
+        <div class="box-border box-wishlist">
+
+            @*<h1 class="text text-center">
+                @ViewBag.Title
+            </h1>*@
+
+            <div id="table-product">
+
+                @*<a onclick="ini.data();" class="btn btn-danger">data</a>*@
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+<script>
+    $(document).ready(function () {
+        ini.data();
+    });
+</script>
+
+<script>
+    function changeicon(object) {
+        var child = object.childNodes[0];
+        if (object.attributes[6].value == "true") {
+            child.classList.remove("glyphicon-arrow-up");
+            child.classList.add("glyphicon-arrow-down");
+        } else {
+            child.classList.remove("glyphicon-arrow-down");
+            child.classList.add("glyphicon-arrow-up");
+        }
+    }
+
+</script>

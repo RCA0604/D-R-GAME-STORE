@@ -1,0 +1,38 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*background-color: #1B44D0;*/
+    /*opacity: 0.5;*/
+    /*background-image: url(/Resources/fondo4.jpg);*/
+    /*image-orientation: initial;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.box-wishlist, .table-wishlist {
+    margin-top: 20px;
+}
+
+.box-border {
+    border: 1px solid #dbd6d6;
+    padding: 20px;
+    overflow: hidden;
+}
